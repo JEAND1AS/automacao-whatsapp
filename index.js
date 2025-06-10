@@ -11,9 +11,8 @@ const fs = require("fs");
 const Tesseract = require("tesseract.js");
 const { JWT } = require("google-auth-library");
 
-const creds = require("./credenciais.json"); /* Precisa ter o credenciais.json dentro da sua pasta que vai rodar o bot 
-Para ter acesso ao credenciais, voce precisar ir n*/
-const docId = "1sJKBUew32auAT5Bv_Iih20fwsozDualb8tbUVeihNnc"; /* Aqui é o ID da sua planilha https://docs.google.com/spreadsheets/d/aqui_é_seu_ID/edit?gid=0#gid=0*/
+const creds = require("./credenciais.json"); /* RECOMENDO QUE RENOMEIO SEU ARQUIVO PARA credenciais.json */
+const docId = "ID_PLANILHA"; /* Aqui é o ID da sua planilha https://docs.google.com/spreadsheets/d/aqui_é_seu_ID/edit?gid=0#gid=0*/
 const processedMessages = new Set();
 
 // ✅ ADICIONA GASTO
@@ -86,7 +85,9 @@ async function connectToWhatsApp() {
     browser: ["Ubuntu", "Chrome", "120.0.0"],
   });
 
-  const grupoControleGastos = "120363402286739070@g.us";
+  const grupoControleGastos = "ID_DO_BATEPAPO";   /* voce utiliza  if (jid.endsWith("@g.us")) {
+    console.log("🆔 ID do grupo:", jid);
+  }  sock.ev.on("messages.upsert" */
 
   sock.ev.on("connection.update", (update) => {
     const { connection, lastDisconnect, qr } = update;
