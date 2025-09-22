@@ -7,6 +7,10 @@ Este projeto é um bot inteligente que escuta mensagens de um **grupo do WhatsAp
 ✅ Permite comando `/total mês` para somar valores  
 ✅ Ideal para uso pessoal, em casal ou em grupos de finanças
 
+
+<img width="928" height="1600" alt="image" src="https://github.com/user-attachments/assets/148a7a86-a227-4339-814d-1e035f5bff8f" />
+
+
 ---
 
 ## 📦 Requisitos
